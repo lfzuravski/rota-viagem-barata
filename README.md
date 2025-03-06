@@ -3,19 +3,19 @@ Guia de Uso da Aplicação Rota Viagem Barata
 Como Executar a Aplicação
 
 Pré-requisitos
-	* .NET 8 SDK instalado
-	* Editor de código como Visual Studio
+- .NET 8 SDK instalado
+- Editor de código como Visual Studio
 
 Passos para Execução do Codigo no Visual Studio
-	* Abra o Visual Studio
-	* Certifique-se de que "RotaDeViagens.App" esta definido como startup project
-		* Se nao tiver definido como "startup project" clique com botao direito no "RotaDeViagens.App" e selecione a opcao "set as startup project"
-	* No menu superior do Visual Studio localize o botao em verde onde diz "RotaDeViagens.App" e clique para executar.
+- Abra o Visual Studio
+- Certifique-se de que "RotaDeViagens.App" esta definido como startup project
+	- Se nao tiver definido como "startup project" clique com botao direito no "RotaDeViagens.App" e selecione a opcao "set as startup project"
+- No menu superior do Visual Studio localize o botao em verde onde diz "RotaDeViagens.App" e clique para executar.
 
 Para executar os testes unitários:
-	* Expanda o projeto "RotaDeViagens.Test" 
-	* Abra o arquivo "UnitTest1.cs"
-	* Localize "UnitTest1" e clique com botao direito e clique na opcao "Run Tests"
+- Expanda o projeto "RotaDeViagens.Test" 
+- Abra o arquivo "UnitTest1.cs"
+- Localize "UnitTest1" e clique com botao direito e clique na opcao "Run Tests"
 
 Estrutura dos Arquivos/Pacotes
 
