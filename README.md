@@ -20,26 +20,26 @@ Para executar os testes unitários:
 Estrutura dos Arquivos/Pacotes
 
 RotaDeViagens/
-│── App/          		  	 	  # Contém o ponto de entrada do programa
-│   └── Main.cs           	 	  # Classe principal para chamar o servico
-│   └── RotaAppService.cs 	 	  # Classe principal com a interface de entrada
-│	└──	Resources/            	  # Arquivos de dados
-│   		└── rotas.txt         # Arquivo contendo as rotas disponíveis
-│── Core/                 	 	  # Regras de negócio da aplicação
-│   ├── GerenciadorRotas.cs  	  # Lógica para encontrar e adicionar rotas
-│── Shared/               	 	  # Compartilhamento de dados e constantes
-│   ├── AppSettings.cs      	  # Constantes como mensagens utilizadas na aplicação, fica mais facil para manutencao
-│   ├── MelhorRota.cs        	  # Property class - Classe para armazenar a melhor rota encontrada (poderia ser utilizado DTO)
-│   └── Rota.cs              	  # Property class - Representação de uma rota individual (poderia ser utilizado DTO)
-│── Tests/                	 	  # Testes unitários com xUnit
-    └── UnitTest1.cs  			  # Testes para o gerenciador de rotas
+App/          		  	  # Contém o ponto de entrada do programa
+  - Main.cs           	 	  # Classe principal para chamar o servico
+  - RotaAppService.cs 	 	  # Classe principal com a interface de entrada
+Resources/            	  	  # Arquivos de dados
+  - rotas.txt         		  # Arquivo contendo as rotas disponíveis
+Core/                 	 	  # Regras de negócio da aplicação
+  - GerenciadorRotas.cs  	  # Lógica para encontrar e adicionar rotas
+Shared/               	 	  # Compartilhamento de dados e constantes
+  - AppSettings.cs      	  # Constantes como mensagens utilizadas na aplicação, fica mais facil para manutencao
+  - MelhorRota.cs        	  # Property class - Classe para armazenar a melhor rota encontrada (poderia ser utilizado DTO)
+  - Rota.cs              	  # Property class - Representação de uma rota individual (poderia ser utilizado DTO)
+Tests/                	 	  # Testes unitários com xUnit
+  - UnitTest1.cs  	          # Testes para o gerenciador de rotas
  
 Decisões de Design
 	Separação de Responsabilidades:
 	O código segue a arquitetura em camadas: 
-		├── App (ponto de entrada), 
-		├── Core (lógica de negócios), 
-		├── Shared (dados compartilhados) e Tests (testes unitários).
+		- App (ponto de entrada), 
+		- Core (lógica de negócios), 
+		- Shared (dados compartilhados) e Tests (testes unitários).
 
 Persistência em Arquivo:
 	O arquivo rotas.txt é utilizado para armazenar as rotas de maneira simples e eficiente, sem necessidade de banco de dados.
