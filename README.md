@@ -54,3 +54,16 @@ Evita Dijkstra:
 
 Testabilidade:
 	Testes unitários com xUnit garantem a qualidade do código, validando a busca da melhor rota e a adição de novas rotas.
+
+ Parametos para Aplicacao
+
+Exemplo de consulta: 
+- no menu digite 1 para consultar
+- Digite a rota: GRU-CDG
+- Resultado sera: Melhor Rota: GRU - BRC - SCL - ORL - CDG ao custo de $40
+
+Exemplo para adicionar uma nova rota:
+- No menu digite 2 para iserir
+- entre com Origem,Destino,Valor
+
+Os dados serão persistidos no modo Debug/Runtime, porém não serão substituídos caso um novo build do programa seja feito. Isso ocorre porque, uma vez que o arquivo já foi copiado para a pasta Debug, ele não será sobrescrito em compilações futuras.
